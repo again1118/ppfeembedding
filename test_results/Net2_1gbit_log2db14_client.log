@@ -1,0 +1,95 @@
+========== PPFE Client ==========
+Server Address: 10.0.0.1:8080
+Output File: ./test_results/Net2_1gbit_log2db14.csv
+=================================
+Connected to server: 10.0.0.1:8080
+[Client] Receiving server configuration...
+[Client] Database Size (Log2): 14
+[Client] Entry Size: 8 bytes
+[Client] Plaintext Modulus: 1032193
+[Client] Receiving server encryption parameters...
+[Client] Encryption parameters: RingSize=2048, QSize=54, PlainModuluSize=20
+[Client] Ciphertext modulus q obtained during initialization = 18014398509404161
+[Client] Plaintext modulus p obtained during initialization = 1032193
+[Client] q % p = 970238 (0 means p divides q)
+[Client] Receiving server public key...
+[Client] Receiving encrypted database (128 ciphertexts)...
+[Client] Encrypted database receiving complete
+[Offline Communication] Time: 13 ms, Received: 4.00806 MB
+[Client] Running Offline phase (client computation)...
+Offline: cutoffs done, invalid hints: 1076
+Offline: extra indices done.
+[Client] Pre-generating 128 Enc(0) ciphertexts...
+[Offline Pre-generation] Time: 298 ms
+[Offline Client Computation] Time: 23.579 s
+[Client] Running 128 queries...
+[Client] Reset communication stats, starting online phase
+[Client] Completed: 0%
+[Client] Completed: 20%
+[Client] Completed: 40%
+[Client] Completed: 60%
+[Client] Completed: 80%
+[Client] Completed: 100%
+[Client] Completed 128 queries
+[Client] Total Online Time: 304 ms
+[Client] Average Time Per Query: 2.375 ms
+
+[Client] Starting correctness verification...
+[Verification] ✓ All correct!
+
+======================================
+========= Detailed Performance Stats =========
+======================================
+
+[Offline Phase]
+  1. Server encryption: see server output
+  2. Offline communication:
+     - Time: 13 ms
+     - Received: 4.00806 MB
+     - Average communication time per query: 0.00677083 ms
+     - Average communication volume per query: 2188.94 bytes
+  3. Offline client computation:
+     - Time: 23.579 s
+     - Average computation time per query: 0.0122807 s
+
+[Online Phase](128 queries)
+  4. Online query client computation:
+     - Total time: 1.846 ms
+     - Average per query: 0.0144219 ms
+  5. Online query communication (send query):
+     - Total time: 1.776 ms
+     - Total sent (compatible with old criteria): 4.079 MB
+     - Average time per query: 0.013875 ms
+     - Average sent per query (compatible with old criteria): 33415.2 bytes
+  6. Online query server computation: see server output
+  7. Online answer communication (receive response):
+     - Total time: 299.083 ms
+     - Total received (compatible with old criteria): 0.0151596 MB
+     - Average time per query: 2.33659 ms
+     - Average received per query (compatible with old criteria): 124.188 bytes
+  8. Online generate query result:
+     - Total time: 0.149 ms
+     - Average per query: 0.00116406 ms
+  9. Online refresh phase (hint update):
+     - Total time: 0.851 ms
+     - Average per query: 0.00664844 ms
+
+[Online Communication Breakdown]
+  - Main connection sent (Query): 4.0741 MB
+  - Main connection received: 0 MB
+  - OT connection sent: 0.0049057 MB
+  - OT connection received (Answer): 0.0151596 MB
+
+[Total]
+  Online total time: 304 ms
+  Online average per query: 2.375 ms
+  Total Online communication (real total bytes): 4.09416 MB
+    - Total sent: 4.079 MB
+    - Total received: 0.0151596 MB
+  Average communication per query (real total bytes): 33539.4 bytes
+  Average time per query (including amortized Offline): 2.38177 ms
+  Average communication per query (including amortized Offline): 35728.3 bytes
+======================================
+
+Disconnected from server
+[Client] Done

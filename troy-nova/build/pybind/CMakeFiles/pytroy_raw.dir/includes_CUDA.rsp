@@ -1,0 +1,1 @@
+-isystem "/PPFE/troy-nova/build/_deps/pybind11-src/include" -isystem /usr/include/python3.12

@@ -1,0 +1,31 @@
+========== PPFE Client ==========
+Server Address: 10.0.0.1:8080
+Output File: ./test_results/Net4_100mbit_log2db14.csv
+=================================
+Connected to server: 10.0.0.1:8080
+[Client] Receiving server configuration...
+[Client] Database Size (Log2): 14
+[Client] Entry Size: 8 bytes
+[Client] Plaintext Modulus: 1032193
+[Client] Receiving server encryption parameters...
+[Client] Encryption parameters: RingSize=2048, QSize=54, PlainModuluSize=20
+[Client] Ciphertext modulus q obtained during initialization = 18014398509404161
+[Client] Plaintext modulus p obtained during initialization = 1032193
+[Client] q % p = 970238 (0 means p divides q)
+[Client] Receiving server public key...
+[Client] Receiving encrypted database (128 ciphertexts)...
+[Client] Encrypted database receiving complete
+[Offline Communication] Time: 1440 ms, Received: 4.00806 MB
+[Client] Running Offline phase (client computation)...
+Offline: cutoffs done, invalid hints: 1076
+Offline: extra indices done.
+[Client] Pre-generating 128 Enc(0) ciphertexts...
+[Offline Pre-generation] Time: 324 ms
+[Offline Client Computation] Time: 23.309 s
+[Client] Running 128 queries...
+[Client] Reset communication stats, starting online phase
+[Client] Completed: 0%
+[Client] Completed: 20%
+[Client] Completed: 40%
+[Client] Completed: 60%
+[Client] Completed: 80%

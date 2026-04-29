@@ -1,0 +1,3 @@
+/PPFE/troy-nova/build/_deps/zstd-subbuild/CMakeFiles/zstd-populate.dir
+/PPFE/troy-nova/build/_deps/zstd-subbuild/CMakeFiles/edit_cache.dir
+/PPFE/troy-nova/build/_deps/zstd-subbuild/CMakeFiles/rebuild_cache.dir

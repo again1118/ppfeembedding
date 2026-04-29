@@ -1,0 +1,10 @@
+*.so
+venv/
+pytroy.egg-info/
+dist/
+stubs/
+__init__.pyi
+pytroy/
+reference.txt
+__pycache__/
+.pytest_cache/

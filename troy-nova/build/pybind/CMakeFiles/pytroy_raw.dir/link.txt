@@ -1,0 +1,1 @@
+/usr/lib/nvidia-cuda-toolkit/bin/g++ -fPIC -flto -shared  -o pytroy_raw.cpython-312-x86_64-linux-gnu.so @CMakeFiles/pytroy_raw.dir/objects1.rsp @CMakeFiles/pytroy_raw.dir/linkLibs.rsp -L"/usr/lib/x86_64-linux-gnu/stubs" -L"/usr/lib/x86_64-linux-gnu"

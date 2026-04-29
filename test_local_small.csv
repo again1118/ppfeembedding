@@ -1,0 +1,17 @@
+Variant, Log2 DBSize, EntrySize(Bytes), NumQueries, Offline Time (s), Online Time (ms),  Amortized Compute Time Per Query (ms)
+One server, 8, 2048, 16, 2.505, 25.6875, 36.125
+One server, 8, 2048, 16, 2.452, 25.5, 35.7167
+One server, 8, 2048, 16, 2.567, 224.625, 235.321
+One server, 8, 2048, 16, 2.458, 25.625, 35.8667
+One server, 8, 2048, 16, 2.517, 26.1875, 36.675
+One server, 8, 2048, 16, 2.46, 25.6875, 35.9375
+One server, 8, 2048, 16, 2.477, 50.8125, 61.1333
+One server, 8, 2048, 16, 2.513, 51.1875, 61.6583
+One server, 8, 2048, 16, 2.535, 52.8125, 63.375
+One server, 8, 2048, 16, 2.597, 51.1875, 62.0083
+One server, 8, 2048, 16, 2.465, 51.0625, 61.3333
+One server, 8, 2048, 16, 2.476, 50.75, 61.0667
+One server, 8, 2048, 16, 2.56, 51.25, 61.9167
+One server, 8, 2048, 16, 2.477, 50.875, 61.1958
+One server, 8, 2048, 16, 2.507, 50.9375, 61.3833
+One server, 8, 2048, 16, 2.54, 52.8125, 63.3958
