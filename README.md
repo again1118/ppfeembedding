@@ -42,11 +42,11 @@ make clean
 
 #### Start the Server:
 ```bash
-./build/s3pir_server <Log2DBSize> <EntrySize> <Port>
+./build/s3pir_server <Log2DBSize> <embeddingdim> <Port>
 ```
 Example:
 ```bash
-./build/s3pir_server 16 8 8080
+./build/s3pir_server 16 2048 8080
 ```
 - `Log2DBSize`: Log base 2 of the number of entries (e.g., 16 for 65,536 entries).
 - `EntrySize`: Size of each database entry in bytes (must be a multiple of 8).
